@@ -798,6 +798,22 @@ class RazerAbyssus2000(__RazerDevice):
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/1277/1277_abyssus_2000.png"
 
 
+class RazerDeathAdder2000V2(__RazerDevice):
+    """
+    Class for the Razer DeathAdder 2000 (Hardware Revision 2, USB PID 0x005F)
+    """
+    USB_VID = 0x1532
+    USB_PID = 0x005F
+    METHODS = ['get_device_type_mouse',
+               'get_logo_brightness', 'set_logo_brightness', 'set_logo_none', 'set_logo_on', 'set_logo_breath_mono',
+               'get_scroll_brightness', 'set_scroll_brightness', 'set_scroll_none', 'set_scroll_on', 'set_scroll_breath_mono',
+               'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_poll_rate', 'set_poll_rate']
+
+    DEVICE_IMAGE = "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-09.png"
+
+    DPI_MAX = 2000
+
+
 class RazerDeathAdder3500(__RazerDevice):
     """
     Class for the Razer DeathAdder 3500
